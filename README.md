@@ -35,15 +35,15 @@ AWS | >= v4.48.0
 ## Inputs 
 
 
-Value | Description | Optional
---- | --- | ---
-region | Region to deploy resources |  
-vpc_cidr | CIDR for VPC, default CIDR is 172.16.0.0/16 |
-project | Project name, to be added in the name tag |
+Value | Description 
+--- | --- 
+region | Region to deploy resources 
+vpc_cidr | CIDR for VPC, default CIDR is 172.16.0.0/16 
+project | Project name, to be added in the name tag 
 environment | Project environment, to be added in the name tag
-public_subnet | Availability zones and cidr range to create public subnets |
-private_subnet | Availability zone and cidr range to create private subnet | 
-ami | AMI ID | 
+public_subnet | Availability zones and cidr range to create public subnets 
+private_subnet | Availability zone and cidr range to create private subnet |
+ami | AMI ID 
 instance_type | Instance type
 use_existing_key | Put true to use an existing key, defaults to false
 ssh_key | Existing key name or name of the key to be created
