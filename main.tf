@@ -151,8 +151,6 @@ resource "aws_ec2_managed_prefix_list" "prefix_list" {
   
 }
 
-#### security group here #######################################
-
 # Create security group for bastion server 
 
 resource "aws_security_group" "bastion_sg" {
@@ -292,10 +290,6 @@ resource "aws_security_group" "internalssh_sg" {
   }
 }
 
-
-####################################
-
-
 # Create PEM file
 
 resource "tls_private_key" "ssh_key" {
@@ -323,9 +317,6 @@ resource "aws_key_pair" "key_pair" {
     }
   
 }
-
-
-
 
 
 # Create database instance
