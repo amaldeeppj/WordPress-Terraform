@@ -67,4 +67,6 @@ web_hostname | Hostname of webserver instance
 
 * Optimize output
 * Optimize SSH key handling
-
+* Check private zone exists
+* Create new key with specified name
+* Output key name

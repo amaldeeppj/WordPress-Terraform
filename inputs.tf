@@ -181,6 +181,4 @@ variable "web_hostname" {
 }
 
 
-# check private zone exists
-# create new key with specified name
-# output key name
+
