@@ -37,29 +37,29 @@ AWS | >= v4.48.0
 
 Value | Description | Optional
 --- | --- | ---
-region  
-vpc_cidr
-project
-environment
-public_subnet
-private_subnet
-ami
-instance_type
-use_existing_key
-ssh_key
-enable_public_ssh
-prefix_list
-webserver_ports
-db_name
-db_user
-db_password
-db_root_password
-private_zone
-public_zone
-database_userdata
-webserver_userdata
-db_hostname
-web_hostname
+region | Region to deploy resources |  
+vpc_cidr | CIDR for VPC, default CIDR is 172.16.0.0/16 |
+project | Project name, to be added in the name tag |
+environment | Project environment, to be added in the name tag
+public_subnet | Availability zones and cidr range to create public subnets |
+private_subnet | Availability zone and cidr range to create private subnet | 
+ami | AMI ID | 
+instance_type | Instance type
+use_existing_key | Put true to use an existing key, defaults to false
+ssh_key | Existing key name or name of the key to be created
+enable_public_ssh | Enable public SSH access to all servers, defaults to false
+prefix_list | List of IPs to add to prefix list
+webserver_ports | Ports to open in Webserver
+db_name | DB name
+db_user | DB user name
+db_password | Specify strong password for database user
+db_root_password | Specify strong password for database root user
+private_zone | private zone to host db server
+public_zone | Public zone to host web server
+database_userdata | Userdata file to run inside DB server
+webserver_userdata | Userdata file to run inside web server
+db_hostname | Hostname of database instance
+web_hostname | Hostname of webserver instance
 
 
 
